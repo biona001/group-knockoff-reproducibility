@@ -27,10 +27,13 @@ The analysis is conducted in several steps
 
 + `ghostknockoff-part0.ipynb`: Downloads the Pan-UKB LD matrices 
 + `ghostknockoff-part1.ipynb`: Reads the downloaded LD matrices and solves the knockoff optimization problem across 1703 genomic regions 
-+ `ghostknockoff-part2.ipynb`: Reads Albuminuria Z-scores, generates knockoff Z-scores, and performs knockoff filter
++ `ghostknockoff-part2.ipynb`: Reads Albuminuria Z-scores and intermediate knockoff results (e.g. S matrix) from part 1. Then it generates knockoff Z-scores and performs knockoff filter
 + `ghostknockoff-manhattan.ipynb`: Creates the Manhattan plot as featured in our paper
+
+## Future research
+
+We plan to release the ghostknockoff GWAS pipeline as a separate package that is more user friendly and flexible. It will be announced in another paper that is currently being prepared. Once it is ready, the entire ghostknockoff analysis pipeline will self-contained within [GhostKnockoffGWAS.jl](https://github.com/biona001/GhostKnockoffGWAS). Users should find it much simpler to carry out ghostknockoff analysis of GWAS Z-scores. 
 
 ## Questions?
 
 If anything is unclear, or you cannot reproduce our results, please file an issue on GitHub and I will take a look at it asap. You can also reach me at `bbchu@stanford.edu`.
-
