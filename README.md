@@ -12,18 +12,30 @@ We developed a number of softwares to enable group knockoff simulation and analy
 
 For the real-data analysis, we also used 
 
-+ `ghostbasil` (v0.1.3, currently NOT publicaly available): https://github.com/JamesYang007/ghostbasil
++ `ghostbasil` (v0.1.3): https://github.com/JamesYang007/ghostbasil
 + `liftOver` (v1.14.0): https://bioconductor.org/packages/release/workflows/html/liftOver.html
 
 We used `Julia` v1.8.4 and `R` v4.0.2 for all analyses. 
 
 ## Simulated experiments
 
-All scripts (including scripts to make figures) are available in jupyter notebooks starting with `compare`. Note, figure 1 is a combination of 5 simulations, where the simulations are provided in standalone notebooks (e.g. `compare_group_knockoff_AR1.ipynb`), while the figure is generated in `compare_group_knockoff_figure1.ipynb`. 
+All scripts (including scripts to make figures) are available in jupyter notebooks starting with `compare`.
+
++ Figure 1 is a combination of 5 simulations, where the simulations are provided in standalone notebooks (e.g. `compare_group_knockoff_AR1.ipynb`), while the figure is generated in `compare_group_knockoff_figure1.ipynb`. 
++ Figure 2 code is provided in `compare_group_knockoff_panUKB3.ipynb`
++ Figure 3 code is provided in `compare_exchangeability.ipynb`
++ Figure 4 and Table 1 code is provided in `compare_group_knockoff_timings.ipynb`
++ Figure 5 code is detailed below
++ Figure S1 code is provided in `compare_group_knockoff_group_vs_ungroup.ipynb`
++ Figure S2 code is provided in `compare_group_knockoff_panUKB_block_sizes.ipynb`
++ Figure S3 code is provided in `compare_group_knockoff_panUKB.ipynb`
++ Figure S4, similar to Figure 1, is a combination of 5 simulations. Individual simulation code is provided in standalone notesbooks ending in `_marginal.ipynb`
++ Table S1: each entry was searched manually on the [GWAS catalog](https://www.ebi.ac.uk/gwas/)
++ Figure S5 code is provided in `compare_group_knockoff_trace_and_mineval.ipynb`
 
 ## Albuminuria GWAS
 
-The analysis is conducted in several steps
+The analysis shown in Figure 5 is conducted in several steps
 
 + `ghostknockoff-part0.ipynb`: Downloads the Pan-UKB LD matrices 
 + `ghostknockoff-part1.ipynb`: Reads the downloaded LD matrices and solves the knockoff optimization problem across 1703 genomic regions 
