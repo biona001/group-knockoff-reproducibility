@@ -1,5 +1,7 @@
 # Group Knockoff Reproducibility
 
+:warning: Note the source code here has been moved to [here](https://github.com/biona001/ghostknockoff-gwas-reproducibility), where all future updates will take place. 
+
 This repo contains scripts to reproduce the simulated and real data experiments of the [group knockoff paper](https://arxiv.org/abs/2310.15069). All scripts are provided as individual jupyter notebooks, which can be viewed directly in the web browser. To execute the scripts, one can do so directly within jupyter notebooks, or copy the code into the Julia REPL. 
 
 ## Software versions
